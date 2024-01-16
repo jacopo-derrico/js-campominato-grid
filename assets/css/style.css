@@ -61,13 +61,28 @@ main {
     flex-wrap: wrap;
 }
 
+h2 {
+    margin: 0 auto;
+}
+
 .box {
-    flex-basis: calc(100% / 10);
     aspect-ratio: 1;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.box-easy {
+    flex-basis: calc(100% / 10);
+}
+
+.box-medium {
+    flex-basis: calc(100% / 9);
+}
+
+.box-hard {
+    flex-basis: calc(100% / 7);
 }
 
 .box-active {
