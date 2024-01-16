@@ -45,14 +45,14 @@ header {
     width: 50px;
 }
 
-/* SECTION HEADER END */
+/* !SECTION HEADER END */
 
 /* SECTION MAIN */
 main {
     height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
-/* SECTION MAIN END */
+/* !SECTION MAIN END */
 
 /* SECTION FOOTER */
 footer {
@@ -61,4 +61,4 @@ footer {
     height: var(--footer-height);
 }
 
-/* SECTION FOOTER END */
+/* !SECTION FOOTER END */
