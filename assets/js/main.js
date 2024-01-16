@@ -8,20 +8,24 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 let playBtn = document.getElementById('playBtn')
 let gridHTML = document.getElementById('grid')
 
-for (let i = 1; i <= 100; i++) {
-    let box = document.createElement('div')
+function generateGrid() {
+    for (let i = 1; i <= 100; i++) {
+        let box = document.createElement('div')
+        
+        box.classList.add('box')
     
-    box.classList.add('box')
-
-    box.innerHTML = `<span>${[i]}</span>`
-
-    box.addEventListener('click', function(){
-        this.classList.toggle('box-active')
-        console.log(`Cella numero: ${[i]}`)
-    })
+        box.innerHTML = `<span>${[i]}</span>`
     
-    gridHTML.append(box)
+        box.addEventListener('click', function(){
+            this.classList.toggle('box-active')
+            console.log(`Cella numero: ${[i]}`)
+        })
+        
+        gridHTML.append(box)
+    }
 }
+
+playBtn.addEventListener('click', generateGrid)
 
 
 
